@@ -1,5 +1,5 @@
 # Starter pipeline
- task: AzureResourceManagerTemplateDeployment@3
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'AzureRmPipeline-conn'
@@ -9,7 +9,6 @@
     location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/0DoC/azure-pipeline/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName myarmpipeline'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
